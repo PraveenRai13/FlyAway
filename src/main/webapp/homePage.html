@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>FlyAway.com</title>
+</head>
+<body bgcolor="yellow">
+	<div style="text-align: center">
+		<h1>Welcome to FlyAway.Com</h1>
+	</div>
+	<div>
+		<form action="adminLogin.html">
+			<input type="submit" value="Admin Login">
+		</form>
+	</div>
+	<div style="text-align: right">
+		<form action="login.html">
+			<input type="submit" value="Login/Sign up">
+		</form>
+	</div>
+	<div style="text-align: center">
+		<form action="Search" method="POST">
+		<table border="0" bgcolor="cream" align="center" cellspacing="15">
+			<h2>Search Flights</h2>
+			<tr>
+			<td>
+				Where from:
+			</td>
+			<td>
+				<input type="text" name="source" required>
+			</td>
+			</tr>
+			<tr>
+			<td>
+				Where to:
+			</td>
+			<td>
+				<input type="text" name="destination" required>
+			</td>
+			</tr>
+			<tr>
+			<td>
+				Journey Date(DD/MM/YYYY):<input type="text" name="jdate" size="20" required>
+			</td>
+			<td>
+				No. of Passengers:<input type="text" name="nPassenger" size="2" required>
+			</td>
+			</tr>
+		</table>
+			<input type="submit" value="Search Flights">
+			<input type="reset" value="Reset">
+		</form>
+	</div>
+
+</body>
+</html>

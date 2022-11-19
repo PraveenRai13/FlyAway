@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body bgcolor="yellow">
+	<h1><a href=adminHome.html>FlyAway.Com</a></h1>
+	<div style="text-align: right">
+	<form action="adlogout">
+		Admin<input type='submit' value="Logout"><br>
+		<a href=adChangePass>Change Password</a>
+	</form></div>
+	<div style="text-align: center">
+	<h2>Flight Management Portal</h2>
+	<div style="text-align: left">
+	<form action="flightList" method="post">
+		List of flights<br>
+		<input type="hidden" name="k" value="2">
+		<input type="submit" value="Flights List"><br><br>
+	</form>
+	<form action="flightAdd.html">
+		Add new flight<br>
+		<input type="submit" value="Add New Flight"><br><br>
+	</form>
+	<form action="flightUpdate.html" method="post">
+		Update flight<br>
+		<input type="submit" value="Update Flight"><br><br>
+	</form>
+	<form action="flightDelete.html">
+		Delete flight<br>
+		<input type="submit" value="Delete Flight"><br><br>
+	</form>
+	</div>
+	<div style="text-align: center">
+	<h3><a href=adminHome.html>Back</a></h3>
+	</div>
+</body>
+</html>

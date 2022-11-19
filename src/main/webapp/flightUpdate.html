@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body bgcolor="yellow">
+	<h1><a href=adminHome.html>FlyAway.Com</a></h1>
+	<div style="text-align: right">
+	<form action="adlogout">
+		Admin<input type='submit' value="Logout"><br>
+		<a href=adChangePass>Change Password</a>
+	</form></div>
+	<div style="text-align: center">
+		<h2>Update Flight Details</h2>
+		<form action="flightUpdate" method="post">
+		<table border="0" bgcolor="blue" align="center" cellspacing="15">
+			<tr><td>
+				Flight No.:
+			</td><td>
+				<input type="text" name="fNo" required>
+			</td><td>
+				Airline:
+			</td><td>
+				<input type="text" name="airline" required>
+			</td></tr>
+			<tr><td>
+				From:
+			</td><td>
+				<input type="text" name="from" required>
+			</td><td>
+				Where:
+			</td><td>
+				<input type="text" name="where" required>
+			</td></tr>
+			<tr><td>
+				Departure Date(DD/MM/YYYY):
+			</td><td>
+				<input type="text" name="depDate" required>
+			</td><td>
+				Arrival Date(DD/MM/YYYY):
+			</td><td>
+				<input type="text" name="arrDate" required>
+			</td></tr>
+			<tr><td>
+				Departure Time:
+			</td><td>
+				<input type="text" name="depHr" size="1" required>Hrs.
+				<input type="text" name="depMin" size="1" required>Min.
+				<select name="depZone">
+					<option>AM</option>
+					<option>PM</option>
+				</select>
+			</td><td>
+				Arrival Time:
+			</td><td>
+				<input type="text" name="arrHr" size="1" required>Hrs.
+				<input type="text" name="arrMin" size="1" required>Min.
+				<select name="arrZone">
+					<option>AM</option>
+					<option>PM</option>
+				</select>
+			</td></tr>
+			<tr><td>
+				Capacity:
+			</td><td>
+				<input type="number" name="cap" size="5" required>
+			</td><td>
+				Price(Rs.):
+			</td><td>
+				<input type="number" name="price" size="5" required>
+			</td></tr>
+		</table>
+				<input type="submit" value="Update Flight">
+				<input type="reset" value="Reset">
+		</form><h3><a href=flManage.html>Back</a></h3></div>
+</body>
+</html>

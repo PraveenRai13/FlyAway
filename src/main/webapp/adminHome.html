@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body bgcolor="yellow">
+	<h1><a href=adminHome.html>FlyAway.Com</a></h1>
+	<div style='text-align: right'>
+	<form action='adlogout'>
+		Admin<input type="submit" value="Logout"><br>
+		<a href=adChangePass>Change Password</a>
+	</form></div>
+	<div style="text-align: center">
+	<h2>Welcome to Admin Page</h2>
+	<div style="text-align: left">
+	<form action="cityList" method="post">
+		List of places available for ticket booking<br>
+		<input type="submit" value="List of Places"><br><br>
+	</form>
+	<form action="airlineList" method="post">
+		List of airlines available for ticket booking<br>
+		<input type="submit" value="Airlines List"><br><br>
+	</form>
+	<form action="flightList" method="post">
+		List of flights<br>
+		<input type="hidden" name="k" value="1">
+		<input type="submit" value="Flights List"><br><br>
+	</form>
+	</div>
+	<div style="text-align: center">
+	<h3><a href=flManage.html>Flight Management Portal</a></h3>
+	</div>
+</body>
+</html>
